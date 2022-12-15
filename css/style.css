@@ -1,0 +1,328 @@
+body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    background-color: #000000f2;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+}
+.loader{
+    display:none ;
+    inset: 0;
+    z-index: 9999999999;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 120px;
+    height: 120px;
+    margin: -76px 0 0 -76px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+/* Navbar Section Starts */
+.nav{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 60px;
+    height: 100vh;
+    z-index: 55555555;
+    background-color: #f8f6f6;
+    text-align: center;
+    transition: all 0s ease;
+}
+.nav .logo{
+    padding: 25px 0;
+}
+.nav .logo img{
+    height: 48px;
+    margin-left:10%;
+}
+.nav .close{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display:none;
+}
+.nav .close i{
+    font-size: 25px;
+    font-weight: 900;
+    line-height: 1;
+}
+i{
+    cursor: pointer; 
+    font-family: "Font Awesome 5 Free";
+    line-height: 1;
+}
+.nav .menu{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.nav .menu i{
+    font-size: 25px;
+    font-weight: 900;
+}
+.nav .socialIcons{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 11;
+}
+
+.nav .socialIcons .fa-globe , .nav .socialIcons .fa-share-alt{
+    margin-top:10px;
+} 
+.fas{
+    font-weight: 900;
+    line-height: 1;
+}
+.nav-menu{
+    position: fixed;
+    top: 0;
+    left: 0px;
+    width: 250px;
+    height: 100vh;
+    z-index: 5555;
+    background-color: #000;
+    transition: all 0.6s ease;
+    display: none;
+}
+.nav-menu ul{
+    padding-left: 25%;
+    height: 500px;
+    overflow: hidden;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+.nav-menu ul li{
+    list-style: none;
+    position:relative;
+    opacity: 0;
+    padding-top: 500px;
+}
+
+.nav-menu ul li a{
+    color: #f9f6f6;
+    background-color: transparent;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+}
+.nav-menu .nav-social{
+    position: absolute;
+    bottom: 50px;
+    left: 20%;
+    margin-bottom: 20px;
+}
+.nav-menu .nav-social a{
+    color: #f9f6f6;
+    padding-left: 15px;
+    font-size: 14px;
+}
+.nav-menu .nav-social a:hover , .nav-menu ul li a:hover{
+    color:yellow;
+}
+.nav-menu .nav-footer{
+    position: absolute;
+    bottom: 20px;
+    left: 5%;
+}
+.nav-menu .nav-footer span{
+    color: #999;
+}
+/* Navbar Section Ends */
+
+
+/* Content Section Starts */
+
+.shadow img {
+    width: 90%;
+    transition: all 0.3s ease-in-out;
+}
+.shadow{
+    position: relative;
+    overflow:hidden;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    border-radius: 0.25rem;
+}
+
+.layer{
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    top:100%;
+    left:0%;
+    right: 0%;
+    bottom: 0%;
+    background-color: rgba(255,255,255,.7);
+    color: #000;
+    text-align: center;
+    font-weight: 800;
+    transition: all 1s;
+}
+.layer5{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:100%;
+    left:0%;
+    right: 0%;
+    bottom: 0%;
+    background-color: rgba(255,255,255,.7);
+    color: #000;
+    text-align: center;
+    font-weight: 800;
+    transition: all 1s;
+}
+
+.layer1{
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    top:100%;
+    left:0%;
+    right: 0%;
+    bottom: 0%;
+    background-color: rgba(255,255,255,.7);
+    color: #000;
+    text-align: center;
+    font-weight: 800;
+    transition: all 1s;
+}
+.shadow:hover .layer{
+    top: 0;
+    left: 5%;
+    right: 0;
+    bottom: 0;
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.5rem);
+    cursor: pointer;
+}
+.shadow:hover .layer5{
+    top: 0;
+    left: 5%;
+    right: 0;
+    bottom: 0;
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.5rem);
+    cursor: pointer;
+}
+.shadow:hover .layer1{
+    top: 0;
+    left: 0%;
+    right: 0;
+    bottom: 0;
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.5rem);
+    cursor: pointer;
+}
+
+ .layercategory h2, .layercategory p{
+    margin: 0.2rem!important;
+}
+
+.meal:hover{
+    cursor: pointer;
+}
+.search{
+    padding-right: 15px;
+    padding-left: 15px;
+}
+#searchName , #searchLetter{
+    margin-top: 10%;
+}
+.form-control{
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    border-bottom: 1px solid rgba(255,255,255,.7);
+    border-radius: 0;
+    font-weight: 800;
+}
+  
+ .layer h2{
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+}
+.results .item .layer p{
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+.fa-city{
+    color:#e65a50ab;
+    font-family: "Font Awesome 6 Free";
+}
+h2{
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: 1.2;
+}
+.fa-bowl-food{
+    color: #9ee650ab;
+
+}
+/* Content Section Ends */
+
+/* Contact Section Starts */
+input{
+    box-shadow: 0 .5rem 1rem rgba(255,255,255,.1);
+    margin-bottom:0;
+    padding-left:50px;
+}
+.form-control:focus{
+    background-color: transparent;
+    
+    box-shadow: 0 .5rem 1rem transparent;
+}
+
+
+.form-control{
+    border:none;
+    border-bottom:2px solid #0fd;
+}
+
+
+#contact-inputs{
+    padding: 150px;
+}
+
+.contact-inputs{
+    display: none;
+}
+
+.contact-style{
+    box-shadow: 0 .5rem 1rem rgba(255,255,255,.1)!important;
+}
+
+.contact-style::placeholder{
+    text-align: center;
+}
+
+.contact-css{
+    width: 90%;
+    margin: auto;
+}
+
+.alert{
+    padding: 10px ;
+    font-size: 14px;
+    display: none;
+}
+/* Contact Section Ends */
+
